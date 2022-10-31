@@ -13,75 +13,105 @@
 </head>
 
 <body>
-
-  <div class="py-5 md-4 bg-secondary">
-    <div class="row">
-      <div class="col">
-
-        <nav class="navbar navbar-expand-lg">
-
-          <div class="container">
-
-            <a class="navbar-logo" href="#">
-              <img class="logo" src="img/xlogo.png.pagespeed.ic.3IQ1zMRW5G.png" alt="logo">
-            </a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-              aria-label="Переключатель навигации">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse p-3" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active text-white" aria-current="page" href="#">Головна</a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link active text-white" aria-current="page" href="#">Фонд</a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link active text-white" aria-current="page" href="#">Релізи</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active text-white" aria-current="page" href="#">Контакти</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    Концерти
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">22.02.2023</a></li>
-                    <li><a class="dropdown-item" href="#">25.03.2023</a></li>
-                    <li>
-                      <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#">Інші дати тура</a></li>
-                  </ul>
-                </li>
-              </ul>
-              <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Пошук" aria-label="Пошук">
-                <button class="btn btn-dark" type="submit">Пошук</button>
-              </form>
-            </div>
-
-          </div>
-        </nav>
-
+  <header class="mb-5 bg-secondary">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <a href="">
+            <img class="py-5 rounded mx-auto d-block" src="img/xlogo.png.pagespeed.ic.3IQ1zMRW5G.png" alt="logo">
+          </a>
+        </div>
       </div>
     </div>
-  </div>
+
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Головна</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Фонд</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Релізи</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Контакти</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Благодійні онцерти
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">22.02.2023</a></li>
+                <li><a class="dropdown-item" href="#">23.03.2023</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Інші дати тура</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
+            <button class="btn btn-danger" type="submit">Поиск</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
 
 
 
   <div class="container">
-    <div class="row p-5">
-      <div class="col-xxl-6 col-xl-6 col-lg-12 m-40 d-flex align-items-center">
+    <div class="row">
 
+      <main class="col-xxl-6 col-xl-6 col-lg-12 mb-4 bg-light">
+        <h1 class="dontion text-danger text-center p-2">Безпечний донат</h1>
+        <form class="row g-1">
+          <div class="col-xxl-12 col-xl-12 col-md-12">
+            <label for="inputPassword4" class="form-label"></label>
+            <input type="password" class="form-control" id="inputPassword4" placeholder="Ваше ім'я">
+          </div>
+          <div class="col-12">
+            <label for="inputcomment" class="form-label"></label>
+            <input type="text" class="form-control" id="inputcomment" placeholder="Коментар (необов'язково)">
+          </div>
+          <div class="col-12">
+            <label for="inputcardNumber" class="form-label"></label>
+            <input type="text" class="form-control" id="inputcardNumber" placeholder="Номер карти">
+          </div>
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
+            <label for="inputx-month" class="form-label"></label>
+            <input type="text" class="form-control" id="inputx-month" placeholder="Місяць">
+          </div>
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
+            <label for="inputx-year" class="form-label"></label>
+            <input type="text" class="form-control" id="inputx-year" placeholder="Рік">
+          </div>
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
+            <label for="inputcvv" class="form-label"></label>
+            <input type="text" class="form-control" id="inputcvv" placeholder="СVV2">
+          </div>
+          <div class="col-12">
+            <label for="inputamount" class="form-label"></label>
+            <input type="text" class="form-control" id="inputamount" placeholder="Сума переказу (грн)">
+          </div>
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <button type="submit" class="btn btn-dark m-3">Надіслати платіж</button>
+          </div>
+        </form>
+
+        <hr>
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
 
           <div class="carousel-indicators">
@@ -119,144 +149,133 @@
             <span class="visually-hidden">Наступний</span>
           </button>
         </div>
-      </div>
 
+        <hr>
+        <div class="accordion accordion-flush p-2" id="accordionFlushExample">
+          <div class="accordion-item text-bg-secondary">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Збір на мільйони!
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                Єднаємося заради Перемоги!
 
-      <div class="col-xxl-3 col-xl-3 col-lg-6 order-xl-first d-flex align-items-center">
-        <div class="container">
-          <h1 class="dontion text-bg-danger text-center">Безпечний донат</h1>
-          <form class="row g-1">
-            <div class="col-xxl-12 col-xl-12 col-md-12">
-              <label for="inputPassword4" class="form-label"></label>
-              <input type="password" class="form-control" id="inputPassword4" placeholder="Ваше ім'я">
-            </div>
-            <div class="col-12">
-              <label for="inputcomment" class="form-label"></label>
-              <input type="text" class="form-control" id="inputcomment" placeholder="Коментар (необов'язково)">
-            </div>
-            <div class="col-12">
-              <label for="inputcardNumber" class="form-label"></label>
-              <input type="text" class="form-control" id="inputcardNumber" placeholder="Номер карти">
-            </div>
-            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
-              <label for="inputx-month" class="form-label"></label>
-              <input type="text" class="form-control" id="inputx-month" placeholder="Місяць">
-            </div>
-            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
-              <label for="inputx-year" class="form-label"></label>
-              <input type="text" class="form-control" id="inputx-year" placeholder="Рік">
-            </div>
-            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
-              <label for="inputcvv" class="form-label"></label>
-              <input type="text" class="form-control" id="inputcvv" placeholder="СVV2">
-            </div>
-            <div class="col-12">
-              <label for="inputamount" class="form-label"></label>
-              <input type="text" class="form-control" id="inputamount" placeholder="Сума переказу (грн)">
-            </div>
-            <div class="col-12">
-              <button type="submit" class="btn btn-dark m-2">Надіслати платіж</button>
-            </div>
-          </form>
-        </div>
-      </div>
-
-
-      <div class="col-xxl-3 col-xl-3 col-lg-6 d-flex align-items-center">
-        <div class="container">
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button text-bg-danger text-center" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Допомога Збройним Силам України
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>Якість, швидкість, професійність – основні принципи команди волонтерів Антитіла, що забезпечує
-                    всім необхідним Збройні Сили України безпосередньо на передовій. З 2014 року, комунікуюючи напряму
-                    із командирами та бійцями, особисто перевіряючи перебуваючи в зоні бойових дій ми формуємо запити та
-                    доставляємо вантажі до рук отримувача в найгарячіші місця лінії фронту. Безпосередньо аналізуємо
-                    ситуації і потреби на місцях. Консультуємо і вчимо солдат користуватись сучасними засобами розвідки
-                    і спостереження. Особисто перевіряємо якість засобів захисту і медицини, контролюючи кожен крок від
-                    отримання потреби, до пошуку, придбання і доставки в найкоротші терміни.</strong>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed text-bg-danger text-center active" type="button"
-                  data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
-                  aria-controls="collapseTwo">
-                  Допомога дітям
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>В Україну прийшла жахлива і несправедлива війна, пережити яку випало на долю мільйонів
-                    українських дітей. Долю і життя сотень українських дітей війна, на жаль, обірвала назавжди. У
-                    багатьох забрала батьків.
-                    Музиканти гурту Антитіла служать в 130 Батальйоні Територіальної Оборони. Від початку
-                    повномасштабного вторгнення російських окупантів в Україну, підрозділ виконує бойові завдання на
-                    передовій.
-                    Багато військовослужбовців було важко поранено і вбито російськими снарядами й кулями. У багатьох із
-                    них залишилися діти.
-                    Батальйонне Братерство зобов’язалося допомагати і підтримувати дітей загиблих побратимів 130
-                    Батальйону ТРО.
-                    Освіта, медицина, гроші, подарунок до Дня Святого Миколая чи на День Народження, чоловіче плече,
-                    турпохід або ж проста, вчасна порада – це те, що мав зробити батько для своїх дітей, але загинув
-                    захищаючи їх майбутнє.
-                    Тож тепер БФ «Антитіла» й побратими загиблих Героїв взяли на себе цю відповідальну місію.
-                    Підтримайте дітей загиблих.</strong>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed text-bg-danger text-center" type="button"
-                  data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
-                  aria-controls="collapseThree">
-                  Аеророзробка
-                </button>
-              </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>Аеророзробка – це науково-технічний напрямок Благодійного Фонду “АНТИТІЛА”, з підтримки
-                    інноваційних технічних розробок, у галузі роботехніки та авіабудування для військового застосування.
-                  </strong> <code>.accordion-body</code>,
-                </div>
+                Окупанти — це вірус. Країна — організм, який з ним бореться. І як хірург потребує інструментів під час
+                своїх операцій, так і наші військові потребують сучасних засобів для боротьби з окупантом.
               </div>
             </div>
           </div>
-
-
+          <div class="accordion-item text-bg-secondary">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                “Історія однієї мрії”
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Віталік музикант, живе в маленькому селищі Старий Іржавець, що на Полтавщині.
+                У 2017 році він звернувся через соц мережі до Тараса Тополі з проханням подарувати стару апаратуру, яку
+                він з друзями зможуть використовувати на репетиціях та шкільних концертах. Старої апаратури у Антитіл не
+                було, але було внутрішнє відчуття що саме це мабуть потрібно для народження нової зірки, або просто для
+                втілення маленької дитячої мрії. Це було щиро і по справжньому.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item text-bg-secondary">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Хочеш – приєднуйся!
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">український інтернет-провайдер Мережа Ланет разом з Благодійним Фондом
+                АНТИТІЛА запустили спільну благодійну ініціативу «Переможний Гігабіт» для збору коштів нашим військовим.
+                Усі зібрані кошти будуть витрачені на потреби української армії, яка щоденно наближає день визволення
+                України від російських загарбників.
+                Як долучитись до благодійного збору?
+              </div>
+            </div>
+          </div>
         </div>
 
-      </div>
+
+
+
+      </main>
+
+      <aside class="col-xxl-3 col-xl-3 col-lg-6 order-xl-first mb-4 bg-light d-flex justify-content-center">
+        <div class="h-100">
+          <div class="card border-dark m-3" style="width: 18rem;">
+            <img src="img/4.jpeg" class="card-img-top" alt="help">
+            <div class="card-body">
+              <h5 class="card-title">Допомога Збройним Силам України</h5>
+              <p class="card-text">
+                УКРАЇНСЬКІ ВІЙСЬКОВІ ПОТРЕБУЮТЬ:
+                Сучасні електронні засоби для нічного спостереження і водіння авто
+                Літальні апарати для аеророзвідки і корегуванню вогню
+                Автівки і ремонт пошкоджених в бою транспортних засобів
+                Потужні засоби зв’язку і супутникові телефони
+                Тактична медицина
+                Амуніція, засоби захисту</p>
+              <a href="#" class="btn btn-danger">Підтримати</a>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+
+      <aside class="col-xxl-3 col-xl-3 col-lg-6 mb-4 bg-light d-flex justify-content-center">
+        <div class="h-100">
+          <div class="card border-dark m-3" style="width: 18rem;">
+            <img src="img/8.jpeg" class="card-img-top" alt="help">
+            <div class="card-body">
+              <h5 class="card-title">Допомога дітям</h5>
+              <p class="card-text">
+                ДІТИ І СІМ‘Ї ЗАГИБЛИХ ВІЙСЬКОВИХ ПОТРЕБУЮТЬ:
+                Гідної освіти
+                Медичної допомоги
+                Фінансової підтримки
+                Юридичної допомоги
+                Організації відпочинку та подорожей
+                Допомоги в самореалізації та обранні правильного життєвого шляху
+                Підтримки та уваги, яка не замінить батька, але зарадить і не дасть опустити руки, коли важко
+                Подарунків до Дня Народження, врешті решт</p>
+              <a href="#" class="btn btn-danger">Підтримати</a>
+            </div>
+          </div>
+        </div>
+
+      </aside>
     </div>
+
   </div>
 
-  <div class="py-5 md-4 bg-secondary">
-    <div class="row">
-      <div class="container">
 
-        <div class="col bg-secondary">
+
+  <footer class="py-5 bg-secondary">
+    <div class="container">
+      <div class="row">
+        <div class="col">
           <div class="text-white text-center">
             © Антитіла | Зареєстровано в Україні. Благодійний фонд «АНТИТІЛА»
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </footer>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
+
 </body>
 
 </html>
